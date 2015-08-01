@@ -1,0 +1,94 @@
+/* CSS declarations go here */
+
+body {
+
+  font-family: Helvetica;
+  padding: 20px;
+}
+
+
+h2#currentSelection {
+	color: red;
+  padding: 0px 25%;
+  font-size: 40px;
+}
+
+button#Start{
+	background-color: lime;
+  
+  font-size: 25px;
+  width: 75%;
+  padding: 10px;
+}
+
+button {
+	color: #ffffff;
+  padding: 20px;
+  font-size: 18px;
+background-color: #4d4d4d;
+  font-weight: lighter;
+  text-transform: uppercase;
+  border: none;
+}
+
+ul {
+	  list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+div {
+
+}
+
+p.helpText {
+	color: #4c4c4c;
+
+}
+
+li.imageType button.imageType {
+  width: 200px;
+  height: 90px;
+  font-size: 21px;
+}
+
+li.imageType button.imageType:hover{
+
+	background-color: red;
+}
+
+li.filterType button.filterType:hover{
+
+	background-color: blue;
+}
+
+li.imageType {
+
+  padding: 40px 0px 38px 5px;
+  line-height: 5.5;
+  margin: 5px;
+  width: 210px;
+}
+
+li.filterType {
+
+  padding: 25px 2px 26px 8px;
+}
+
+li.imageType.selected, li.filterType.selected {
+	  border: 3px solid red;
+
+}
+
+/*li.filterType {
+	clear: both;
+}*/
+
+.hide {
+	display: none;
+}
+
+
+

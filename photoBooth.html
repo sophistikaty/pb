@@ -1,0 +1,55 @@
+<head>
+  <title>photoBooth</title>
+</head>
+
+<body>
+  <h1>Photo Booth</h1>
+  {{> start}}
+
+<!-- <br><br>
+<hr>
+<h1>Welcome to Meteor!</h1>
+
+  {{> hello}} -->
+
+</body>
+
+<template name="start">
+
+  <p class="helpText">current selection:</p>
+  <h2 id="currentSelection">{{imageType}} with {{filterType}} filter</h2>
+  <p class="helpText">choose options below and get started</p>
+  <button id="Start" type="button">Start</button>
+  <!-- <p>{{hello}}</p> -->
+
+  <div class="imageType">
+
+   	<br><p class="helpText">photo-types</p>
+	  <ul id="imageType">
+		{{#each imageTypes}}
+			<li id={{this}} class="imageType">
+				<button class="imageType" type="button">{{this}}</button>
+			</li>
+		{{/each}}
+	  </ul>
+  </div>
+
+   
+   <div id="filterType" class="">
+   	<br><p class="helpText">filters</p>
+   		<ul class="filterType">
+		   	{{#each filterTypes }}
+		   	<li id={{this}} class="filterType">
+		   		<button class="filterType" type="button">{{this}}</button>
+			</li>
+		   {{/each}}
+	   </ul>
+   </div>
+
+</template>
+
+
+<!-- <template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template> -->
